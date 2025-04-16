@@ -1,0 +1,370 @@
+@media (min-width: 344px) and (max-width: 499px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-brand, .hamburger i{
+       color: #ffffff;
+    }
+    .menu-list{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    .menu-list a{
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .menu-list.show {
+        right: 0;
+    }
+    .close-btn {
+        align-self: flex-end;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .menu-list .fa-chevron-down{
+        display: none;
+    }
+    .home-content{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    .home-page{
+        border-radius: 10px;
+        margin: 15px;
+        padding: 10px;
+        background: linear-gradient(324deg,#0a0a0a,#0c0c0c,#f5f4f4);
+        background-size: 180% 180%;
+        animation: gradient-animation 37s ease infinite;
+    }
+    @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+    }
+    .home-name{
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    .home-scroll{
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 12px;
+    }
+    .home-arrow{
+        position: absolute;
+        bottom: 80px;
+        right: 15px;
+    }
+    /* ARROW */
+    .arrow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: rotate(0deg);
+        cursor: pointer;
+    }
+    .arrow span {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-bottom: 5px solid white;
+        border-right: 5px solid white;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+    }
+    .arrow span:nth-child(2) {
+        animation-delay: -0.2s;
+    }
+    .arrow span:nth-child(3) {
+        animation-delay: -0.4s;
+    }
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+        }
+    }
+
+    /* CONTACT PAGE */
+    .contact-page{
+        margin: 15px 25px;
+    }
+    .contact-name{
+        font-size: 25px;
+    }
+    .upper-contact{
+        position: sticky;
+        top: 0;
+        background-color: white; 
+        z-index: 10; 
+    }
+    .contact-menu{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .contact-menu a{
+        font-size: 30px;
+        text-decoration: none;
+        color: #000000;
+    }
+    .lower-contact{
+        display: flex;
+        justify-content: none;
+        flex-direction: column-reverse;
+    }
+    .contact-information, .contact-form{
+        width: 100%;
+    }
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-information label{
+        font-size: 14px;
+        font-weight: 500;
+        color: #525252;
+    }
+    .contact-information p{
+        font-size: 16px;
+        color: #000000;
+    }
+    .contact-form h3{
+        font-size: 16px;
+        padding: 10px 0 15px;
+    }
+    .contact-form label{
+        font-size: 14px;
+        color: #000000;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    form .header{
+        width: 100%;
+    }
+    form button{
+        font-size: 16px;
+        width: 100%;
+        height: 35px;
+        background: none;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #525252;
+    }
+    form input{
+        font-size: 14px;
+        color: #525252;
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #525252;
+    }
+    form textarea{
+        font-size: 14px;
+        color: #525252;
+        width: 100%;
+        height: 100px;
+        border: none;
+        border-bottom: 1px solid #525252;
+    }
+
+    /* ABOUT PART */
+    .about-page{
+        margin: 15px 25px;
+    }
+    .about-name{
+        font-size: 25px;
+        position: sticky;
+        top: 0;
+        background-color: white; 
+        z-index: 10; 
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-description{
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        color: #000000;
+    }
+    .about-text{
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        color: #000000;
+    }
+    .about-content img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .about3{
+        width: 100%;
+    }
+    .work-experience p{
+        font-size: 16px;
+    }
+    .work-experience h4{
+        padding-top: 10px;
+    }
+    .date{
+        color: #525252;
+    }
+    .tech{
+        font-weight: 600;
+    }
+    /* PROJECT PART */
+    .project-page{
+        margin: 15px 25px;
+    }
+    .project-name{
+        font-size: 25px;
+    }
+    .upper-project{
+        position: sticky;
+        top: 0;
+        background-color: white; 
+        z-index: 10; 
+    }
+    .lower-project{
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-img img{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .lower-img img{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .lower-img, .upper-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 0;
+    }
+     /* SERVICE PART */
+    .service-page{
+        margin: 15px 25px;
+    }
+    .service-name{
+        font-size: 25px;
+    }
+    .upper-service{
+        position: sticky;
+        top: 0;
+        background-color: white; 
+        z-index: 10; 
+    }
+    .lower-service{
+        display: flex;
+        flex-direction: column;
+    }
+    .service-web-design,.service-web-dev,.service-video-editor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+        border-radius: 10px;
+        padding: 10px 0 15px;
+    }
+    .back-gray{
+        background-color: none;
+    }
+    .service-title{
+        padding: 10px 0 15px; 
+        width: 100%;
+        line-height: 25px;
+    }
+    .service-title br{
+        display: none;
+    }
+    .service-img{
+        padding: 0 0 10px;
+        width: 100%;
+    }
+    .service-img img{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .service-description{
+        padding: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+    /* FOOTER */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: linear-gradient(122deg,#0a0a0a,#0c0c0c,#f5f4f4);
+        background-size: 180% 180%;
+        animation: gradient-animation 37s ease infinite;
+    }
+    @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+    }
+    footer p{
+        color: #ffffff;
+        font-size: 12px;
+    }
+    footer h2{
+        color: #ffffff;
+        font-size: 16px;
+    }
+}

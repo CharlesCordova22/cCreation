@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8c89857bb1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>cCreation</title>
+</head>
+<body>
+    <div class="content" style="display: none;"> 
+        <!-- HOME PART -->
+        <div class="home-page">
+            <header>
+                <div class="logo-brand">
+                    <h3>cCreation</h3>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </div>
+                <div class="menu-list" id="menu">
+                    <div class="close-btn" onclick="toggleMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <a href="#about">About</a>
+                    <a href="#service">Services</a>
+                    <a href="#project">Projects</a>
+                    <a href="#contact">Contact <i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </header>
+            <div class="home-content">
+                <div class="home-name">
+                    <h1>charles<br>cordova</h1>
+                </div>
+                <div class="home-scroll">
+                    <p>SCROLL NOW</p>
+                </div>
+                <div class="home-arrow">
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT PART -->
+        <div class="about-page" id="about">
+            <div class="about-name">
+                <h1>about</h1>
+            </div>
+            <div class="about-content">
+                <div class="about1">
+                    <div class="about-description">
+                        <p>
+                            Web developer based in Philippines, focused on building<br>
+                            seamless digital experiences through clean, responsive,<br>
+                            and user-centered design.
+                        </p>
+                    </div>
+                    <div class="about-text">
+                        <p>As someone who thrives in challenging environments, I am always seeking out new opportunities to expand my skillset and take on new challenges. Creativity and innovation are at the heart of everything I do, and I am constantly looking for new ways to approach problems and find unique solutions. </p>
+                    </div>
+                </div>
+                <div class="about2">
+                    <img src="me-image.png" alt="me-image">
+                </div>
+                <div class="about3">
+                    <div class="work-experience">
+                        <h2>Work Experience</h2>
+
+                        <h4>Manna Racket Center</h4>
+                        <p class="date">June 2023 - Present</p>
+                        <p class="desc"><span class="tech">Freelance Full Stack Developer</span> with hands-on experience in designing and developing web-based applications. One of my recent projects includes building a custom Point of Sale (POS) system for Manna Racket Center, tailored specifically to streamline their court bookings, inventory management, and transaction processing.</p>
+
+                        <h4>CyberTech Cebu</h4>
+                        <p class="date">July 2024 - Present</p>
+                        <p class="desc"><span class="tech">Software Developer</span> in CyberTech Cebu Research and Development Center.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICES PART -->
+        <div class="service-page" id="service">
+            <div class="upper-service">
+                <div class="service-name">
+                    <h1>services</h1>
+                </div>
+            </div>
+            <div class="lower-service">
+                <div class="service-web-design">
+                    <div class="service-title">
+                        <h2>Web<br> Design</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="web-design.jpg" alt="web-design">
+                    </div>
+                    <div class="service-description">
+                        <p>I offer Web Design services focused on creating visually engaging, user-friendly layouts that enhance user experience and reflect your brand identity.</p>
+                    </div>
+                </div>
+                <div class="service-web-dev back-gray">
+                    <div class="service-title">
+                        <h2>Full-Stack<br> Development</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="web-developer.jpg" alt="web-dev">
+                    </div>
+                    <div class="service-description">
+                        <p>I can build responsive, functional, and scalable websites using PHP, HTML, CSS, JavaScript, and MySQL to bring ideas to life online.</p>
+                    </div>
+                </div>
+                <div class="service-video-editor">
+                    <div class="service-title">
+                        <h2>Video<br> Editing</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="vid-editor.jpg" alt="vid-edit">
+                    </div>
+                    <div class="service-description">
+                        <p>I can edit videos by crafting clean, engaging edits—confident in cutting, syncing, and enhancing footage to tell compelling visual stories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROJECT PART -->
+        <div class="project-page" id="project">
+            <div class="upper-project">
+                <div class="project-name">
+                    <h1>projects</h1>
+                </div>
+            </div>
+            <div class="lower-project">
+                <div class="upper-img">
+                    <div class="upper-left-img">
+                        <img src="manna-laptop.png" alt="mtc-image">
+                    </div>
+                    <div class="upper-right-img">
+                        <img src="shugyo.png" alt="shugyo-image">
+                    </div>
+                </div>
+                <div class="lower-img">
+                    <div class="lower-left-img">
+                        <img src="soundscout.png" alt="soundscout-image">
+                    </div>
+                    <div class="lower-right-img">
+                        <img src="attendify.png" alt="attendify-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT PART -->
+        <div class="contact-page" id="contact">
+            <div class="upper-contact">
+                <div class="contact-name">
+                    <h1>contact</h1>
+                </div>
+            </div>
+            <div class="lower-contact">
+                <div class="contact-information">
+                    <div>
+                        <label>Phone:</label>
+                        <p>+63 917 8602597</p>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <p>Cebu Philippines</p>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <p>charlescordova999@gmail.com</p>
+                    </div>
+
+                    <div class="contact-menu">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="" >
+                        <div class="header">
+                            <h3>Do not hesitate to contact me to discuss a possible project or discover more about my work.</h3>
+                        </div>
+                        <div>
+                            <label>Your name</label><br>
+                            <input type="text" >
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Message</label><br>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>&copy;2025 cCreation. All Rigths Reserved.</p>
+            </div>
+            <div>
+                <h2>cCreation</h2>
+            </div>
+        </footer>
+    </div>
+    <div class="loader-wrapper">
+        <video class="loader-video" autoplay muted loop playsinline>
+          <source src="cCreation-Transparent.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
